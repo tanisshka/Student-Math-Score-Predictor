@@ -1,22 +1,27 @@
-/* Import premium font */
+/* Import modern font */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
 
 /* Reset */
 
 * {
+
   margin: 0;
 
   padding: 0;
 
   box-sizing: border-box;
 
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
+
 }
+
 
 /* Background */
 
 body {
+
   height: 100vh;
 
   display: flex;
@@ -25,30 +30,36 @@ body {
 
   align-items: center;
 
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+
 }
 
-/* Main card */
 
-.container {
+/* Card */
+
+.login {
+
   background: rgba(255, 255, 255, 0.95);
 
   padding: 50px 60px;
 
   border-radius: 16px;
 
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
 
   text-align: center;
 
   width: 450px;
 
   animation: fadeIn 0.8s ease;
+
 }
+
 
 /* Title */
 
-.container h1 {
+.login h1:first-child {
+
   font-size: 32px;
 
   font-weight: 700;
@@ -56,68 +67,105 @@ body {
   color: #222;
 
   margin-bottom: 15px;
+
 }
+
 
 /* Subtitle */
 
-.container p {
-  font-size: 18px;
+.login h2 {
+
+  font-size: 20px;
+
+  font-weight: 400;
 
   color: #555;
 
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+
 }
+
+
+/* Score */
+
+.login h1[style] {
+
+  font-size: 48px;
+
+  font-weight: 700;
+
+  color: #28a745 !important;
+
+  margin-bottom: 25px;
+
+}
+
 
 /* Button */
 
 button {
-  background: linear-gradient(135deg, #667eea, #764ba2);
-
-  color: white;
-
-  border: none;
 
   padding: 14px 35px;
 
-  font-size: 18px;
+  font-size: 16px;
 
   font-weight: 600;
 
+  border: none;
+
   border-radius: 30px;
+
+  background: linear-gradient(135deg, #667eea, #764ba2);
+
+  color: white;
 
   cursor: pointer;
 
   transition: all 0.3s ease;
 
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
 }
+
 
 /* Hover */
 
 button:hover {
+
   transform: translateY(-3px);
 
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+
 }
+
 
 /* Click */
 
 button:active {
+
   transform: scale(0.97);
+
 }
+
 
 /* Animation */
 
 @keyframes fadeIn {
+
   from {
+
     opacity: 0;
 
     transform: translateY(20px);
+
   }
 
   to {
+
     opacity: 1;
 
     transform: translateY(0);
+
   }
+
 }

@@ -1,0 +1,27 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Prediction Result</title>
+
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/result.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="login">
+      <h1>Prediction Result</h1>
+
+      <h2>Predicted Maths Score is:</h2>
+
+      <h1>{{ "%.2f"|format(results) }}</h1>
+
+      <br />
+
+      <a href="{{ url_for('predict_datapoint') }}">
+        <button >Predict Again</button>
+      </a>
+    </div>
+  </body>
+</html>
