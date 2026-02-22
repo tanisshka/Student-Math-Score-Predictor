@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Student Performance App</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/index.css') }}"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Student Exam Performance Predictor</h1>
+
+      <p>Predict your Maths Score using Machine Learning</p>
+
+      <a href="{{ url_for('predict_datapoint') }}">
+        <button>Start Prediction</button>
+      </a>
+    </div>
+  </body>
+</html>
